@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(0, 0, 33), rgb(218 52 139));
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(96 0 161);
+    padding: 0 20px;
+}
+
+nav:hover {
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(242, 224, 252);
+    font-size: 1.1rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 70px 0;
+    flex-wrap: wrap;
+}
+
+.firstsection > div {
+    width: 45%;
+    margin: 10px;
+}
+
+.leftsection {
+    font-size: 2.5rem;
+}
+
+.leftsection .button {
+    padding: 20px;
+}
+
+.leftsection .btn {
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.rightsection img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 50px 0;
+}
+
+.purple {
+    color: rgb(117, 3, 223);
+}
+
+#element {
+    color: rgb(104, 4, 197);
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.secondsection .box {
+    background: rgb(255, 255, 255);
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondsection .box.vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+}
+
+main hr {
+    border: 0;
+    background: blue;
+    height: 1.2px;
+    margin: 40px 20px;
+}
+
+.secondsection h1 {
+    font-size: 1.9rem;
+}
+
+.text-grey {
+    color: gray;
+}
+
+.image-top {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: rgb(218 52 139);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-content .socials {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content .socials li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content .socials a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-content .socials a:hover {
+    color: #ffa500;
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+footer {
+    background-color: rgb(57, 0, 30);
+}
+
+.Aboutme {
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.Aboutme h1 {
+    font-size: 1.9rem;
+}
+
+.Aboutme .box {
+    background: rgb(255, 255, 255);
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill_section {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.skill_box .button {
+    padding: 20px;
+}
+
+.skill_box .btn {
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .firstsection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .firstsection > div {
+        width: 90%;
+    }
+
+    .leftsection {
+        font-size: 2rem;
+    }
+
+    .leftsection .btn {
+        font-size: 18px;
+    }
+
+    .secondsection, .Aboutme, .skill_section {
+        width: 90%;
+        margin: auto;
+    }
+}
